@@ -1,0 +1,28 @@
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class palin
+{
+public static void main(String args[])
+{
+int r=0;
+System.out.println(" Enter number" );
+Scanner ob=new Scanner(System.in);
+int n=ob.nextInt();
+int m=n;
+while(m>0)
+{
+int a=m%10;
+r=(r*10)+a;
+m=m/10;
+}
+if(n==r)
+{
+System.out.println("the number is paliandrome" );
+}
+else
+{
+System.out.println("not");
+}
+}
+}
